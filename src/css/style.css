@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100%;
+    height: 95vh;
+    background: url(../image/hero.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: -1;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #141414;
+    opacity: 0.5;
+}
+
+.container-hero {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.hero .main-text {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 3px 1px 3px var(--primary-color);
+    line-height: 3.5rem;
+}
+
+.lawyers {
+    color: var(--primary-color);
+    text-shadow: 0 0 7px #000;
+}
+
+.initial-description {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    width: 550px;
+    text-shadow: 0 0 3px #000;
+    font-size: 18px;
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-item {
+    width: 400px;
+    height: 450px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.service-title {
+    height: 120px;
+    font-size: 22px;
+    border-bottom: solid 1px;
+}
+
+.service-description {
+    font-size: 18px;
+}
+
+.professional-info {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    padding: 100px;
+    background-color: var(--primary-color);
+}
+
+.professional-image {
+    border-radius: 12px;
+}
+
+.professional-info .info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.professional-info .info .info-text {
+    max-width: 500px;
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+.contact-now {
+    font-size: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.contact-link {
+    border-radius: 25px;
+}
+
+.contact-buttons .media-button {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    color: #fff;
+}
+
+.contact-buttons .media-button:hover {
+    transform: scale(110%);
+}
+
+.whatsapp {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 12.5px;
+    bottom: 30px;
+    border-radius: 50%;
+    transition: 0.1s ease-in-out;
+}
+
+.whatsapp:hover {
+    right: 9px;
+    bottom: 27.5px;
+    font-size: 40px;
+}
+
+.whatsapp-link {
+    align-self: flex-end;
+    border-radius: 50%;
+}
+
+.container-whatsapp {
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    transition: 0.2s ease-in-out;
+}
+
+.container-whatsapp:hover {
+    width: 65px;
+    height: 65px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    min-height: 50px;
+    gap: 100px;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media .media-link {
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.social-media .media-item:hover {
+    transform: scale(120%);
+}
+
+.location {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.location-text {
+    width: 300px;
+}
+
+.map {
+    width: 300px;
+    height: 120px;
+}
