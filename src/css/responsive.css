@@ -4,7 +4,7 @@
         text-align: center;
         align-items: center;
         gap: 20px;
-        padding: 100px 30px;
+        padding: 100px 20px;
     }
 
     .professional-info .info-title {
@@ -41,7 +41,7 @@
 
 @media (max-width: 500px) {
     .hero .main-text {
-        font-size: 1.8rem;
+        font-size: 25px;
     }
 
     .initial-description {
