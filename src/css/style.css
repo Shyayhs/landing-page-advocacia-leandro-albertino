@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     height: 100vh;
@@ -9,6 +9,111 @@ body {
 main {
     display: flex;
     flex-direction: column;
+}
+
+.header nav {
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.header nav:before {
+    content: "";
+    background-color: var(--background-color);
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+}
+
+.header nav ul {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header nav ul li a {
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+
+.header nav ul li a:hover {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+}
+
+.header .menu {
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    cursor: pointer;
+
+}
+
+.header nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .hamburguer:before, 
+.header .hamburguer:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.hamburguer:before {
+    top:-10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+.header input {
+    display: none;
+}
+
+.header input:checked ~ ul {
+    display: block;
+}
+
+.header input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+.header input:checked ~ label .hamburguer:before {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.header input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
 }
 
 .hero {
@@ -46,12 +151,12 @@ main {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 600;
-    text-shadow: 3px 1px 3px var(--primary-color);
+    text-shadow: 3px 1px 3px var(--secondary-color);
     line-height: 3.5rem;
 }
 
 .lawyers {
-    color: var(--primary-color);
+    color: #fff;
     text-shadow: 0 0 7px #000;
 }
 
@@ -61,11 +166,25 @@ main {
     color: #fff;
     width: 550px;
     text-shadow: 0 0 3px #000;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .services {
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--background-color);
+}
+
+.white-logo {
+    width: 400px;
+}
+
+.services-title {
+    font-size: 50px;
+    color: var(--primary-color);
 }
 
 .services-list {
@@ -73,10 +192,11 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    padding: 0 100px;
 }
 
 .service-item {
-    width: 400px;
+    width: 375px;
     height: 450px;
     background-color: var(--primary-color);
     border-radius: 15px;
@@ -89,9 +209,9 @@ main {
 }
 
 .service-title {
-    height: 120px;
     font-size: 22px;
     border-bottom: solid 1px;
+    padding-bottom: 10px;
 }
 
 .service-description {
@@ -103,7 +223,7 @@ main {
     justify-content: center;
     gap: 170px;
     padding: 100px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .professional-image {
@@ -123,6 +243,7 @@ main {
 }
 
 .contact {
+    background-color: var(--background-color);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -130,6 +251,10 @@ main {
     align-items: center;
     gap: 50px;
     padding: 70px 0;
+}
+
+.contact-logo {
+    border-radius: 30px;
 }
 
 .contact-now {
@@ -150,7 +275,7 @@ main {
     padding: 10px;
     border: none;
     border-radius: 25px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     font-size: 18px;
     cursor: pointer;
     transition: 0.15s ease-in-out;
@@ -218,7 +343,7 @@ main {
 
 .social-media .media-link {
     font-size: 25px;
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .social-media .media-item:hover {
@@ -231,11 +356,11 @@ main {
     align-items: center;
 }
 
-.location-text {
-    width: 300px;
-}
-
 .map {
     width: 300px;
     height: 120px;
+}
+
+.location-text {
+    width: 300px;
 }

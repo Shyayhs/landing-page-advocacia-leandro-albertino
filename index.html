@@ -15,22 +15,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./src/aos-master/dist/aos.css"/>
+
+    <link rel="shortcut icon" href="./src/image/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
+    <header class="header">
+        <nav>
+            <input type="checkbox" id="menu-hamburguer">
+
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer">
+                    </span>
+                </div>
+            </label>
+
+            <ul>
+                <li>
+                    <a href="#hero">Página Inicial</a>
+                </li>
+
+                <li>
+                    <a href="#services">Serviços</a>
+                </li>
+
+                <li>
+                    <a href="#professional-info">Sobre mim</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container-hero">
                 <h1 class="main-text">Advocacia Trabalhista</h1>
-
+                
                 <h2 class="lawyers">Leandro Vieira</h2>
-
+                
                 <p class="initial-description">Com dúvidas sobre suas condições de trabalho?<br>Precisando de consulta jurídica?<br>Entre em contato com um especialista<br>Atendimento em todo o país!</p>
             </div>
         </section>
+        
+        <section class="services" id="services">
+            <img src="./src/image/white-logo.png" alt="Logo Branca" class="white-logo">
 
-        <section class="services">
+            <h2 class="services-title">Serviços</h2>
+
             <ul class="services-list">
-                <li class="service-item" data-aos="fade-up-right">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação trabalhista para buscar verbas rescisórias
                     </h3>
@@ -40,7 +77,7 @@
                     </p>
                 </li>
                 
-                <li class="service-item" data-aos="fade-up">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação Trabalhista para fazer reconhecimento de vínculo
                     </h3>
@@ -50,7 +87,7 @@
                     </p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up-left">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação trabalhista para buscar direitos de profissional de enfermagem
                     </h3>
@@ -60,7 +97,7 @@
                     </p>
                 </li>
 
-                <li class="service-item"  data-aos="fade-up-right">
+                <li class="service-item"  data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação trabalhista para buscar direitos de trabalhadores na construção civil
                     </h3>
@@ -68,7 +105,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação trabalhista para cobrar horas extras
                     </h3>
@@ -76,7 +113,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up-left">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação trabalhista para cobrar adicional de insalubridade
                     </h3>
@@ -84,7 +121,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item"  data-aos="fade-up-right">
+                <li class="service-item"  data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação trabalhista para acidente de trabalho
                     </h3>
@@ -92,7 +129,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação cível para financiamento de veículos
                     </h3>
@@ -100,7 +137,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up-left">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação cível para revisão de contratos bancários
                     </h3>
@@ -108,7 +145,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item"  data-aos="fade-up-right">
+                <li class="service-item"  data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Ação cível para cancelamento e atraso de vôo
                     </h3>
@@ -116,7 +153,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement= 'top-bottom'>
                     <h3 class="service-title">
                         Defesa em cobrança bancária (voltado para empresas)
                     </h3>
@@ -124,7 +161,7 @@
                     <p class="service-description"></p>
                 </li>
 
-                <li class="service-item" data-aos="fade-up-left">
+                <li class="service-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <h3 class="service-title">
                         Consultoria trabalhista (voltado para empresas)
                     </h3>
@@ -134,8 +171,8 @@
             </ul>
         </section>
 
-        <section class="professional-info">
-            <img class="professional-image" src="https://placehold.co/300" alt="Imagem do advogado"  data-aos="zoom-in">
+        <section class="professional-info" id="professional-info">
+            <img class="professional-image" src="https://placehold.co/300" alt="Imagem do advogado" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
             <div class="info">
                 <h2 class="info-title">Sobre mim</h2>
@@ -144,9 +181,11 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
+            <img class="contact-logo" src="./src/image/blue-logo.jpg" alt="">
+
             <h2 class="contact-now">
-                Atendimento para qualquer estado do Brasil
+                Atendimento para qualquer estado do Brasil!
                 <br>
                 Entre em contato agora mesmo!
             </h2>
@@ -188,7 +227,7 @@
 
         <ul class="social-media">
             <li class="media-item">
-                <a href="#" class="media-link" target="_blank">
+                <a href=var(--instagram-link) class="media-link" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </li>
@@ -208,11 +247,11 @@
             </p>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    
     <script src="./src/aos-master/dist/aos.js"></script>
-
+    
     <script src="src/js/index.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
