@@ -63,15 +63,15 @@
 }
 
 @media (max-width: 400px) {
-    .hero .main-text {
-        font-size: 1.5rem;
-    }
-
     .initial-description {
         width: 350px;
     }
 
     .white-logo {
         width: 300px;
+    }
+
+    .service-item {
+        width: 350px;
     }
 }
