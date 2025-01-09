@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     height: 100vh;
     display: flex;
@@ -119,54 +121,13 @@ main {
 .hero {
     width: 100%;
     height: 95vh;
-    background: url(../image/hero.jpg) no-repeat center;
+    background: url(../image/hero.png) no-repeat center bottom;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: end;
     z-index: -1;
     position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #141414;
-    opacity: 0.5;
-}
-
-.container-hero {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
-}
-
-.hero .main-text {
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-shadow: 3px 1px 3px var(--secondary-color);
-    line-height: 3.5rem;
-}
-
-.lawyers {
-    color: #fff;
-    text-shadow: 0 0 7px #000;
-}
-
-.initial-description {
-    margin-top: 50px;
-    text-align: center;
-    color: #fff;
-    width: 550px;
-    text-shadow: 0 0 3px #000;
-    font-size: 20px;
 }
 
 .services {
@@ -176,10 +137,6 @@ main {
     align-items: center;
     gap: 30px;
     background-color: var(--background-color);
-}
-
-.white-logo {
-    width: 400px;
 }
 
 .services-title {
@@ -192,30 +149,32 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    padding: 0 100px;
+    padding: 0 70px;
 }
 
 .service-item {
-    width: 375px;
-    height: 450px;
+    width: 400px;
     background-color: var(--primary-color);
     border-radius: 15px;
-    text-align: center;
     padding: 25px;
     color: #fff;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    font-family: 'Roboto', serif;
+    text-align: center;
 }
 
 .service-title {
     font-size: 22px;
     border-bottom: solid 1px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .service-description {
-    font-size: 18px;
+    line-height: 23px;
+    font-size: 16px;
 }
 
 .professional-info {
@@ -227,6 +186,7 @@ main {
 }
 
 .professional-image {
+    width: 400px;
     border-radius: 12px;
 }
 
@@ -240,6 +200,10 @@ main {
 
 .professional-info .info .info-text {
     max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 23px;
 }
 
 .contact {
@@ -254,6 +218,7 @@ main {
 }
 
 .contact-logo {
+    width: 450px;
     border-radius: 30px;
 }
 
@@ -336,24 +301,11 @@ main {
     color: #fff;
 }
 
-.social-media {
-    display: flex;
-    gap: 20px;
-}
-
-.social-media .media-link {
-    font-size: 25px;
-    color: #fff;
-}
-
-.social-media .media-item:hover {
-    transform: scale(120%);
-}
-
 .location {
     display: flex;
     gap: 20px;
     align-items: center;
+    line-height: 23px;
 }
 
 .map {
