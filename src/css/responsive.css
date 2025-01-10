@@ -85,5 +85,15 @@
     .service-item {
         width: 300px;
         text-align: center;
+        height: auto;
+    }
+
+    .on {
+        height: auto;
+    }
+
+    .service-header {
+        height: auto;
+        padding-left: 0;
     }
 }
