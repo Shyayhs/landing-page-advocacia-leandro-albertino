@@ -120,7 +120,7 @@ main {
 
 .hero {
     width: 100%;
-    height: 95vh;
+    height: 70vh;
     background: url(../image/hero.png) no-repeat center bottom;
     background-size: cover;
     display: flex;
