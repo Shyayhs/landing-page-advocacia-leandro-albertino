@@ -20,5 +20,4 @@ Landing Page de advocacia exibindo demandas atendidas, contando um pouco sobre o
 ## Autor
 
 - Linkedin - [Pedro Lucas](www.linkedin.com/in/pedro-lucas-rocha)
-- Frontend Mentor - [@Shyayhs](https://www.frontendmentor.io/profile/Shyayhs)
 - Github - [@Shyayhs](https://github.com/Shyayhs)
