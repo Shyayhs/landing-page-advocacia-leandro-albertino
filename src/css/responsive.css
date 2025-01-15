@@ -33,26 +33,11 @@
     .social-media .media-link {
         font-size: 30px;
     }
-
-    .location {
-        flex-direction: column;
-    }
-
-    .location-text {
-        width: 300px;
-        text-align: center;
-        order: -1;
-    }
 }
 
 @media (max-width: 500px) {
     .hero .main-text {
         font-size: 25px;
-    }
-
-    .initial-description {
-        width: 400px;
-        font-size: 23px;
     }
 
     .contact-logo {
@@ -70,10 +55,6 @@
 }
 
 @media (max-width: 400px) {
-    .initial-description {
-        width: 350px;
-    }
-
     .white-logo {
         width: 300px;
     }
@@ -96,5 +77,23 @@
         min-height: 65px;
         height: auto;
         padding-left: 10px;
+    }
+
+    .professional-image {
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px) { 
+    .professional-image {
+        width: 300px;
+    }
+
+    .contact-logo {
+        width: 300px;
+    }
+
+    .main-footer {
+        font-size: 18px;
     }
 }
